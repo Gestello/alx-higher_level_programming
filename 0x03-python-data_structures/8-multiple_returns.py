@@ -2,15 +2,16 @@
 
 def multiple_returns(sentence):
 
-    length = len(sentence)
+    len_sen = len(sentence)
 
-    my_tuple = ()
 
-    if length == 0:
+    if (len_sen == 0):
 
-        my_tuple = 0, "None"
+        new_tuple = (len_sen, None)
 
     else:
 
-        my_tuple = length, sentence[0]
-	return
+        new_tuple = (len_sen, sentence[0])
+
+
+    return (new_tuple)
