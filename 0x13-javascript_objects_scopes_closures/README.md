@@ -1,1 +1,1 @@
-4-rectangle.js
+5-square.js
