@@ -1,14 +1,9 @@
 #!/usr/bin/node
-
-function secondBiggest(n)
-{
-	if (n[1]){
-		return 0
-	}else if (n.length === 3){
-		return 0
-	}else{
-		return Math.max(...n)
-	}	
+if (process.argv.length <= 3) {
+  console.log(0);
+} else {
+  const args = process.argv.map(Number)
+    .slice(2, process.argv.length)
+    .sort((a, b) => a - b);
+  console.log(args[args.length - 2]);
 }
-
-console.log(secondBiggest(process.argv))
